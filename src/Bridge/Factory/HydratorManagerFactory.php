@@ -9,4 +9,6 @@ use Zend\Hydrator\HydratorPluginManager;
 class HydratorManagerFactory
 {
     const PLUGIN_MANAGER_CLASS = HydratorPluginManager::class;
+
+    const CONFIG_KEY = 'hydrators';
 }

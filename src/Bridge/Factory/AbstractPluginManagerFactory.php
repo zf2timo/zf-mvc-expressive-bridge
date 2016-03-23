@@ -36,10 +36,10 @@ class AbstractPluginManagerFactory
     {
         $config = $container->get('config');
 
-        if (is_array($config) === false || isset($config[self::CONFIG_KEY]) === false) {
+        if (is_array($config) === false || isset($config[static::CONFIG_KEY]) === false) {
             return [];
         }
 
-        return $config[self::CONFIG_KEY];
+        return $config[static::CONFIG_KEY];
     }
 }
