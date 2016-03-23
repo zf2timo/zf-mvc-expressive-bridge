@@ -1,0 +1,32 @@
+{
+  "name": "zf2timo/zf-mvc-expressive-bridge",
+  "description": "Builds a Bridge between Zend Expressive and Plugin Managers of Zend\\MVC",
+  "minimum-stability": "dev",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "zf2",
+    "mvc",
+    "expressive",
+    "bridge",
+    "PluginManager"
+  ],
+  "require": {
+    "container-interop/container-interop": "^1.1"
+  },
+  "suggest": {
+    "zendframework/zend-filter": "Zend\\Filter component",
+    "zendframework/zend-inputfilter": "Zend\\InputFilter component",
+    "zendframework/zend-validator": "Zend\\Validator component"
+  },
+  "require-dev": {
+    "zendframework/zend-servicemanager": "@stable",
+    "zendframework/zend-inputfilter": "@stable",
+    "zendframework/zend-filter": "@stable",
+    "zendframework/zend-validator": "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "TTe\\": "src/"
+    }
+  }
+}
