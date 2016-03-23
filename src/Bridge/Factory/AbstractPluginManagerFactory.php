@@ -34,9 +34,10 @@ class AbstractPluginManagerFactory
      */
     private function getCreationOptions(ContainerInterface $container)
     {
+        /** @var \ArrayObject $config */
         $config = $container->get('config');
 
-        if (is_array($config) === false || isset($config[static::CONFIG_KEY]) === false) {
+        if (isset($config[static::CONFIG_KEY]) === false) {
             return [];
         }
 
