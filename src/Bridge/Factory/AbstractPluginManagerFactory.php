@@ -1,14 +1,14 @@
 <?php
 
-
 namespace zf2timo\Bridge\Factory;
-
 
 use Interop\Container\ContainerInterface;
 
 class AbstractPluginManagerFactory
 {
     const PLUGIN_MANAGER_CLASS = 'AbstractPluginManager';
+
+    const CONFIG_KEY = 'AbstractPluginManager';
 
     /**
      * Create and return a plugin manager.
@@ -23,8 +23,23 @@ class AbstractPluginManagerFactory
      */
     public function __invoke(ContainerInterface $container, $name, array $options = null)
     {
-        $options = $options ?: [];
+        $options = $options ?: $this->getCreationOptions($container) ?: [];
         $pluginManagerClass = static::PLUGIN_MANAGER_CLASS;
         return new $pluginManagerClass($container, $options);
+    }
+
+    /**
+     * @param ContainerInterface $container
+     * @return array
+     */
+    private function getCreationOptions(ContainerInterface $container)
+    {
+        $config = $container->get('config');
+
+        if (is_array($config) === false || isset($config[self::CONFIG_KEY]) === false) {
+            return [];
+        }
+
+        return $config[self::CONFIG_KEY];
     }
 }
