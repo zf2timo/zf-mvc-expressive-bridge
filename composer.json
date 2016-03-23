@@ -16,12 +16,14 @@
   "suggest": {
     "zendframework/zend-filter": "Zend\\Filter component",
     "zendframework/zend-inputfilter": "Zend\\InputFilter component",
+    "zendframework/zend-hydrator": "Zend\\InputFilter component",
     "zendframework/zend-validator": "Zend\\Validator component"
   },
   "require-dev": {
     "zendframework/zend-servicemanager": "@stable",
     "zendframework/zend-inputfilter": "@stable",
     "zendframework/zend-filter": "@stable",
+    "zendframework/zend-hydrator": "@stable",
     "zendframework/zend-validator": "@stable"
   },
   "autoload": {
