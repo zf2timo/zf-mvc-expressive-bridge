@@ -25,7 +25,7 @@ Example for the InputFilterManager:
 return [
     'dependencies' => [
         'factories' => [
-            Zend\InputFilter\InputFilter::class => \TTe\Bridge\Factory\InputFilterManagerFactory::class
+            Zend\InputFilter\InputFilter::class => \zf2timo\Bridge\Factory\InputFilterManagerFactory::class
         ]
     ],
 ];

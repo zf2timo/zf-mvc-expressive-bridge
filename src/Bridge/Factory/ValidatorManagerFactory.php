@@ -1,6 +1,6 @@
 <?php
 
-namespace TTe\Bridge\Factory;
+namespace zf2timo\Bridge\Factory;
 
 use Zend\Validator\ValidatorPluginManager;
 
