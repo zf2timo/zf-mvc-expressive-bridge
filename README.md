@@ -34,6 +34,7 @@ The Configuration Keys are followed by ZF2 ServiceManager Keys:
 
 array_key|PluginManager
 ---------|-------------
+form_elements|FormElementManager
 filters|FilterManager
 hydrators|HydratorManager
 input_filters|InputFilterManager

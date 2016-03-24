@@ -23,6 +23,7 @@
     "zendframework/zend-servicemanager": "@stable",
     "zendframework/zend-inputfilter": "@stable",
     "zendframework/zend-filter": "@stable",
+    "zendframework/zend-form": "@stable",
     "zendframework/zend-hydrator": "@stable",
     "zendframework/zend-validator": "@stable"
   },
