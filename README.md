@@ -4,7 +4,7 @@ Currently all Factories for the Zend PluginManagers are in the Zend\MVC Package.
 When the next iteration of Zend Framework is released, all Factories are moved to their correct Packages. But until
 then you can install this Bridge
 
-All Factories just copied form the Zend\MVC@2.7.3
+All Factories just copied form the Zend\MVC@2.7.3 Packages. They only extended slightly to load the Config from the ContainerInterface - because it is not automatically injected by Expressive.
 
 # Installation
 
@@ -30,3 +30,13 @@ return [
     ],
 ];
 ```
+The Configuration Keys are followed by ZF2 ServiceManager Keys:
+
+array_key|PluginManager
+---------|-------------
+filters|FilterManager
+hydrators|HydratorManager
+input_filters|InputFilterManager
+validators|FilterManager
+
+More Information: [Rob Allen Zend\ServiceManager configuration keys](https://akrabat.com/zendservicemanager-configuration-keys/)
