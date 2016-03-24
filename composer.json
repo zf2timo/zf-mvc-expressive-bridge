@@ -14,9 +14,10 @@
     "container-interop/container-interop": "^1.1"
   },
   "suggest": {
+    "zendframework/zend-form": "Zend\\From component",
     "zendframework/zend-filter": "Zend\\Filter component",
     "zendframework/zend-inputfilter": "Zend\\InputFilter component",
-    "zendframework/zend-hydrator": "Zend\\InputFilter component",
+    "zendframework/zend-hydrator": "Zend\\Hydrator component",
     "zendframework/zend-validator": "Zend\\Validator component"
   },
   "require-dev": {
